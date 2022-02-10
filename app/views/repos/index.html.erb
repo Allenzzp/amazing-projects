@@ -1,0 +1,15 @@
+<html lang="en">
+
+<body>
+  <h1>Amazing Repos Lists</h1>
+  <ul>
+    <% @repos.each do |repo| %>
+      <li>
+        <span><%= repo["name"] %></span> - 
+        <a href=<%= repo["url"] %>>link</a>
+      </li>
+    <% end %>
+  </ul>
+</body>
+
+</html>
